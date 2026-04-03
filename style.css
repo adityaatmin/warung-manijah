@@ -328,6 +328,12 @@ html {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 3%;
+  }
+}
+
 .navbar.scrolled {
   background: rgba(0,0,0,0.8);
   backdrop-filter: blur(10px);
@@ -1021,7 +1027,18 @@ section {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap; /* ❌ jangan wrap */
     gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .nav-cta {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }
