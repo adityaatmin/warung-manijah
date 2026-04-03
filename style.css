@@ -289,8 +289,6 @@ html {
   justify-content: space-between;
   z-index: 999;
   transition: 0.3s;
-  left: 50%;
-  transform: translateY(-50%);
 }
 
 .navbar.scrolled {
