@@ -234,6 +234,10 @@ html {
   color: inherit;
 }
 
+.card:active {
+  transform: scale(0.97);
+}
+
 /* EXPERIENCE */
 .experience {
   display: flex;
@@ -394,9 +398,11 @@ section {
 }
 
 .urgency {
-  color: #ff4d4d;
+  color: gold;
+  margin-top: 10px;
   font-size: 14px;
   margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .sticky-order {
