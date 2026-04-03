@@ -455,6 +455,28 @@ section {
   opacity: 0.8;
 }
 
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-img img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px){
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+}
+
 /* HIGHLIGHT */
 .highlight {
   text-align: center;
@@ -584,4 +606,16 @@ section {
 
 .icon:hover i {
   animation: glitch 0.3s linear;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer p {
+  font-size: 14px;
+  opacity: 0.6;
 }
