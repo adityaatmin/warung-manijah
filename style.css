@@ -179,6 +179,8 @@ html {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
   transition: all 0.3s ease;
 }
 
@@ -216,11 +218,20 @@ html {
 .card h3 {
   margin-top: 10px;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .card p {
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
   opacity: 0.7;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* EXPERIENCE */
@@ -278,6 +289,8 @@ html {
   justify-content: space-between;
   z-index: 999;
   transition: 0.3s;
+  left: 50%;
+  transform: translateY(-50%);
 }
 
 .navbar.scrolled {
@@ -302,6 +315,10 @@ html {
 .logo {
   font-size: 20px;
   font-weight: 700;
+}
+
+.logo img {
+  height: 40px;
 }
 
 /* OPSIONAL */
