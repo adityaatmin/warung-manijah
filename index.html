@@ -13,18 +13,20 @@
 
 <header class="navbar">
   <div class="logo">
-    <img src="logo.jpeg" alt="logo">
+    <img src="logo.png" alt="logo">
   </div>
   <nav>
-    <a href="#menu">Menu</a>
+    <a href="#home">Home</a>
+    <a href="#testimoni">Testimoni</a>
     <a href="#about">Tentang</a>
+    <a href="#menu">Menu</a>
     <a href="#contact">Kontak</a>
     <a href="#contact" class="nav-cta">Pesan</a>
   </nav>
 </header>
 
 <!-- HERO VIDEO -->
-<section class="hero">
+<section id="home" class="hero">
   <video autoplay muted loop>
     <source src="video.mp4" type="video/mp4">
   </video>
@@ -33,11 +35,11 @@
   <div class="hero-gradient"></div>
 
   <div class="hero-content">
-    <h1>Ayam Pedas yang Bikin Ketagihan</h1>
-    <p>Sambal fresh, ayam juicy, pedasnya nagih pol.</p>
+    <h1>Ayam Pedas Nampol yang Bikin Balik Lagi</h1>
+    <p>Berdiri sejak tahun 1970-an. Sekali coba nagih selamanya</p>
 
     <p class="urgency">
-      🔥 Lagi banyak dipesan hari ini - stok terbatas!
+      🔥 Banyak pesanan hari ini - stok terbatas!
     </p>
 
     <div class="btn-group">
@@ -47,7 +49,93 @@
       <a href="#menu" class="btn secondary">Lihat Menu</a>
     </div>
 
-    <p class="cta-note">⚡ Respon cepat, langsung dilayani</p>
+    <p class="cta-note">⚡ Respon cepat (biasanya < 1 menit)</p>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="testimoni">
+  <h2>🔥 Kata Mereka yang Udah Coba</h2>
+
+  <div class="testi-container">
+    <div class="testi-track" id="testiTrack">
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Pedasnya gila, nagih banget!"</p>
+        <span>- Habibi</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>Enak dan menyenangkan. Pelayanan Ramah."</p>
+        <span>- Nur</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Alhamdulilah masakannya spesial smua."</p>
+        <span>- Budi</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Enakk.. pedasnya nampol banget"</p>
+        <span>- Novi</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Rasa dijamin uenak Harga tidak mahal sesuai rasa."</p>
+        <span>- Rio</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"The sensation of traditional food of east java is good taste"</p>
+        <span>- Asep</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Warungnya bersih hidangannya macam macam"</p>
+        <span>- Alifi</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Masakan nya mantapss Rekomended"</p>
+        <span>- Dhe Masiyam</span>
+      </div>
+
+      <div class="testi-card">
+        ⭐⭐⭐⭐⭐  
+        <p>"Sangat cocok dari segi makanan dan layanannya"</p>
+        <span>- Om Dodoo</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RATING -->
+ <section class="rating">
+  <h2> Dipilih oleh Ratusan Pelanggan</h2>
+
+  <div class="rating-wrapper">
+
+    <div class="rating-box">
+      <img src="google.png" alt="Google" class="rating-logo">
+      <h3>4.5 ⭐</h3>
+      <p>110+ orang rating tinggi</p>
+    </div>
+
+    <div class="rating-box">
+      <img src="gojek.png" alt="Gojek" class="rating-logo">
+      <h3>4.9 ⭐</h3>
+      <p>300+ pesanan memuaskan</p>
+    </div>
+
   </div>
 </section>
 
@@ -66,35 +154,68 @@
 
 <!-- ABOUT -->
 <section id="about" class="about reveal">
- <div class="about-wrapper">
+  <div class="about-wrapper">
 
-  <div class="about-content">
-    <h2>Tentang Warung Kami</h2>
-    <p>
-      Warung Hj. Manijah hadir dengan cita rasa autentik yang dikemas modern.
-      Kami menyajikan ayam pedas dengan sambal fresh yang diulek langsung,
-      menghadirkan rasa yang nendang dan bikin nagih.
-    </p>
+    <!-- KIRI (TEXT) -->
+    <div class="about-content">
+      <h2>Tentang Warung Kami</h2>
 
-    <p>
-      Dengan harga yang tetap bersahabat, kami ingin memberikan pengalaman makan
-      yang berbeda—bukan sekadar kenyang, tapi juga memuaskan.
-    </p>
+      <p class="hook">
+        🔥 Pedasnya top banget. Sekali coba bakalan ketagihan, sueerr.
+      </p>
+
+      <p><strong>Sejak 1970-an, rasa sama dan tetap juara.</strong></p>
+
+      <p>
+        Semua masakan dibuat langsung dari tangan, bukan bumbu sachet.
+        Cocok buat kamu yang cari pedas beneran nampol.
+      </p>
+
+      <ul>
+        <li>🔥 Pedas nagih</li>
+        <li>🍗 Nasi Ayam Pedas & Kikil favorit</li>
+        <li>💸 Harga ramah pelajar</li>
+      </ul>
+
+      <p>
+        Mau makan langsung? Gasss ke warung kita.
+        Bisa juga order via WhatsApp / website.
+      </p>
+
+      <a href="https://wa.me/6281249888048" class="btn-order">
+        Order Sekarang 🔥
+      </a>
+    </div>
+
+    <!-- KANAN (GAMBAR) -->
+    <div class="about-img">
+      <img src="ayam1.jpeg" class="img front" id="img1">
+      <img src="warung.jpeg" class="img back" id="img2">
+    </div>
+
   </div>
+</section>
 
-  <div class="about-img">
-    <img src="warung.jpeg" alt="warung">
+<!-- FOOD SHOWCASE -->
+<section class="food-showcase">
+  <h2>🤤 Bikin Laper Seketika Ketuwa</h2>
+
+  <div class="food-grid">
+    <img src="ayam1.jpeg" alt="ayam pedas">
+    <img src="ayam2.jpg" alt="kikil">
+    <img src="ayam3.jpeg" alt="rawon">
+    <img src="ayam4.jpeg" alt="kari ayam">
   </div>
- </div>
 </section>
 
 <!-- MENU GRID -->
 <section id="menu" class="menu reveal">
   <h2>🔥 Menu Favorit Hari Ini</h2>
+  <p class="menu-note">🔥 Menu paling sering dipesan hari ini</p>
 
   <div class="grid">
     <a href="https://wa.me/6281249888048?text=Pesan Ayam Pedas" class="card">
-      <span class="badge">🔥 Paling Laris</span>
+      <span class="badge">🔥 Best Seller</span>
       <img src="ayam1.jpeg">
       <h3>Ayam Pedas</h3>
       <p>Pedas Nagih</p>
@@ -118,7 +239,53 @@
       <p>Gurihnya Nampol</p>
     </a>
 
+    <a href="#fullmenu" class="card full-menu">
+
+  <div class="cta-content">
+    <h3>📋 Cek Semua Menu</h3>
+    <p>Klik untuk lihat pilihan lainnya</p>
+    <span class="arrow">↓</span>
   </div>
+
+</a>
+    
+  </div>
+</section>
+
+<!-- FULL MENU -->
+ <section id="fullmenu" class="full-menu-section">
+
+  <h2>Menu Lengkap</h2>
+
+  <!-- TOGGLE -->
+  <div class="menu-toggle">
+    <button class="active" onclick="showMenu('food')">🍗 Makanan</button>
+    <button onclick="showMenu('drink')">🥤 Minuman</button>
+  </div>
+
+  <!-- WRAPPER -->
+  <div class="menu-wrapper">
+
+    <!-- MAKANAN -->
+    <div class="menu-list food active">
+      <div class="menu-item"><h4>Nasi Rawon</h4><span>12K</span></div>
+      <div class="menu-item"><h4>Kari Ayam</h4><span>15K</span></div>
+    </div>
+
+    <!-- MINUMAN -->
+    <div class="menu-list drink">
+      <div class="menu-item"><h4>Es Teh</h4><span>3K</span></div>
+      <div class="menu-item"><h4>Es Jeruk</h4><span>5K</span></div>
+    </div>
+
+  </div>
+
+  <div class="fullmenu-cta">
+  <a href="https://wa.me/6281249888048?text=Halo%20saya%20mau%20pesan" class="btn primary">
+    Pesan Sekarang 🔥
+  </a>
+</div>
+
 </section>
 
 <!-- EXPERIENCE -->
@@ -127,22 +294,28 @@
 
   <div class="highlight-grid">
     <div>
-      🌶️ Sambal fresh diulek langsung
+      🌶️ Cabe fresh diolah langsung
     </div>
     <div>
-      🍗 Ayam juicy & crispy
+      🍗 Ayam juicy & Nampol di lidah
     </div>
     <div>
-      💸 Harga ramah kantong
+      💸 Harga ramah kantong anti bandit
     </div>
   </div>
+</section>
+
+<!-- MID URGENCY -->
+ <section class="urgency-mid">
+  <h2>🔥 Sering Habis Sebelum Jam Tutup</h2>
+  <p>Datang lebih awal atau langsung order sekarang biar gak kehabisan.</p>
 </section>
 
 <!-- CTA -->
 <section class="cta reveal">
   <div class="sticky-order">
   <div class="sticky-content">
-    <span>🔥 Lagi banyak yang order</span>
+    <span>🔥Lagi kebanjiran orderan.</span>
     <a href="https://wa.me/6281249888048">Pesan Sekarang, Sebelum Kehabisan!</a>
   </div>
 </div>
@@ -176,7 +349,7 @@
 
     <!-- KANAN (MAPS) -->
     <div class="contact-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.3276693481894!2d114.17763857401572!3d-8.369392691667963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1550e1742effd%3A0x9f97a7f4b1472a1e!2sWarung%20Ayam%20Pedas%20Hj.%20Manijah%20Genteng!5e0!3m2!1sid!2sid!4v1775193891600!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.3276693481894!2d114.17763857401572!3d-8.369392691667963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1550e1742effd%3A0x9f97a7f4b1472a1e!2sWarung%20Ayam%20Pedas%20Hj.%20Manijah%20Genteng!5e0!3m2!1sid!2sid!4v1775193891600!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </div>
@@ -184,7 +357,6 @@
 
 <footer class="footer">
   <p>© 1970 Warung Hj. Manijah</p>
-  <p>Ayam pedas favorit Gen Z 🔥</p>
 </footer>
 
 <!-- FLOAT -->

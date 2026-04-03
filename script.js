@@ -71,3 +71,33 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+
+setInterval(() => {
+  img1.classList.toggle("front");
+  img1.classList.toggle("back");
+
+  img2.classList.toggle("front");
+  img2.classList.toggle("back");
+}, 2500);
+
+function showMenu(type) {
+  const food = document.querySelector('.food');
+  const drink = document.querySelector('.drink');
+  const buttons = document.querySelectorAll('.menu-toggle button');
+
+  // reset semua
+  food.classList.remove('active');
+  drink.classList.remove('active');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  if (type === 'food') {
+    food.classList.add('active');
+    buttons[0].classList.add('active');
+  } else {
+    drink.classList.add('active');
+    buttons[1].classList.add('active');
+  }
+}
