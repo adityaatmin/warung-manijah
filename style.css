@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0d0d0d;
+  background: radial-gradient(circle at top, #111, #000);
   color: white;
 }
 
@@ -101,6 +101,15 @@ html {
   opacity: 0.9;
 }
 
+.btn.primary {
+  transition: all 0.3s ease;
+}
+
+.btn.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255,215,0,0.3);
+}
+
 .primary {
   background: gold;
   color: black;
@@ -141,38 +150,41 @@ html {
 
 .badge {
   position: absolute;
-  background: gold;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, gold, orange);
   color: black;
-  padding: 5px 10px;
+  padding: 6px 12px;
   font-size: 12px;
-  border-radius: 10px;
+  font-weight: 600;
+  border-radius: 20px;
 }
 
 .card {
   position: relative;
-  background: #141414;
+  background: linear-gradient(145deg, #141414, #0d0d0d);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 15px;
+  padding: 15px;
+  border-radius: 20px;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px;
-  transition: 0.5s;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
 }
 
 .card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* EXPERIENCE */
@@ -262,7 +274,18 @@ h1 {
 
 h2 {
   font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto 0;
+  border-radius: 10px;
 }
 
 p {
@@ -271,7 +294,7 @@ p {
 }
 
 section {
-  padding: 100px 10%;
+  padding: 80px 10%;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
