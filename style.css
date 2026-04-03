@@ -430,3 +430,44 @@ section {
 .highlight-grid div:hover {
   transform: translateY(-5px);
 }
+
+/* KONTAK DAN SOSIAL */
+.contact {
+  background: linear-gradient(to top, #000, #111);
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info {
+  max-width: 400px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.social a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: gold;
+  font-weight: 500;
+}
+
+.contact-map iframe {
+  border-radius: 20px;
+}
+
+@media (max-width: 768px){
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-map iframe {
+    height: 200px;
+  }
+}
